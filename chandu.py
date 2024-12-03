@@ -3,7 +3,7 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "e8dacd88",
+   "id": "0bc971fc",
    "metadata": {},
    "outputs": [
     {
@@ -31,7 +31,7 @@
   {
    "cell_type": "code",
    "execution_count": 10,
-   "id": "3f75b903",
+   "id": "6db89819",
    "metadata": {},
    "outputs": [
     {
@@ -65,7 +65,7 @@
   {
    "cell_type": "code",
    "execution_count": 11,
-   "id": "3a9848d9",
+   "id": "f8d09947",
    "metadata": {},
    "outputs": [
     {
@@ -102,8 +102,34 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 12,
+   "id": "664d04c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[6, 47, 92, 74, 88, 90, 3, 26, 73, 15, 53, 56, 64, 98, 25, 96, 97, 77, 52, 51]\n",
+      "59.15 60.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "import random\n",
+    "randomList=random.sample(range(0,100),20)\n",
+    "print(randomList)\n",
+    "from statistics import mean,median\n",
+    "def getmeanandmedian(listnum):\n",
+    "    return mean(listnum),median(listnum)\n",
+    "mean,median=getmeanandmedian(randomList)\n",
+    "print(mean,median)"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
-   "id": "6f1fbbb6",
+   "id": "a31c7c6f",
    "metadata": {},
    "outputs": [],
    "source": []
